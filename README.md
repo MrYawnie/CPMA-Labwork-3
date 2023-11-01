@@ -1,5 +1,3 @@
 Labwork 3 Demo
 
-[Demo video](https://i.imgur.com/Se3xQed.mp4)
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Se3xQed" data-context="false" ><a href="//imgur.com/a/Se3xQed"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[App-demo.webm](https://github.com/MrYawnie/CPMA-Labwork-3/assets/14262612/62cd9d97-ea1e-403a-bb24-f11ce6a4371e)
