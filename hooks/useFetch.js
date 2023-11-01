@@ -10,6 +10,7 @@ const useFetch = (endpoint, query) => {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
+      // Add your own JSearch API key to .env file located in the root folder. Instructions are in the .env file.
       "X-RapidAPI-Key": process.env.EXPO_PUBLIC_RAPID_API_KEY,
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },

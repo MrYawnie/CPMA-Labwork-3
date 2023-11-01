@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ActivityIndicator, FlatList, Image, TouchableOpacity, View } from 'react-native'
-import { Stack, useRouter, useSearchParams } from 'expo-router'
+import { Stack, useRouter, useGlobalSearchParams } from 'expo-router'
 import { Text, SafeAreaView } from 'react-native'
 import axios from 'axios'
 
@@ -9,7 +9,7 @@ import { COLORS, icons, SIZES } from '../../constants'
 import styles from '../../styles/search'
 
 const JobSearch = () => {
-    const params = useSearchParams();
+    const params = useGlobalSearchParams();
     const router = useRouter()
 
     const [searchResult, setSearchResult] = useState([]);
@@ -32,8 +32,10 @@ const JobSearch = () => {
                 params: {
                     query: params.id,
                     page: page.toString(),
+                    country: "FI",
                 },
             };
+            console.log(options.params)
 
             const response = await axios.request(options);
             setSearchResult(response.data.data);
